@@ -1,34 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Bootstrap Grid System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Bootstrap Grid</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Equal Columns (Auto Layout)</h2>
+        <div class="row g-3">
+            <div class="col bg-primary text-white p-4 rounded shadow-sm">Column 1</div>
+            <div class="col bg-success text-white p-4 rounded shadow-sm">Column 2</div>
+            <div class="col bg-danger text-white p-4 rounded shadow-sm">Column 3</div>
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        <h2 class="text-center mb-4">Specified Column Widths</h2>
+        <div class="row g-3">
+            <div class="col-4 bg-primary text-white p-4 rounded shadow-sm">4/12</div>
+            <div class="col-8 bg-success text-white p-4 rounded shadow-sm">8/12</div>
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        <h2 class="text-center mb-4">Responsive Boxes</h2>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4 bg-primary text-white p-4 rounded shadow-sm">Box 1</div>
+            <div class="col-12 col-md-6 col-lg-4 bg-success text-white p-4 rounded shadow-sm">Box 2</div>
+            <div class="col-12 col-md-12 col-lg-4 bg-danger text-white p-4 rounded shadow-sm">Box 3</div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
-</head>
-<body>
-            <div class="container">
-                <div class="row">
-                    <div class="col bg-primary text-white">Column 1</div>
-                    <div class="col bg-success text-white">Column 2</div>
-                    <div class="col bg-danger text-white">Column 3</div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 bg-primary text-white">Column 1 (4/12)</div>
-                    <div class="col-8 bg-success text-white">Column 2 (8/12)</div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 bg-primary text-white">Box
-                        1</div>
-                    <div class="col-12 col-md-6 col-lg-4 bg-success text-white">Box
-                        2</div>
-                    <div class="col-12 col-md-12 col-lg-4 bg-danger text-white">Box
-                        3</div>
-                </div>
-            </div>
 </body>
 </html>
+
+
